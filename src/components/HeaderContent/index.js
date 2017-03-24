@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import SubHeaderContent from '../SubHeaderContent'
-import Navbar from '../Navbar'
+import Logo from '../Logo';
+import AdBanner from '../AdBanner';
 
 class HeaderContent extends Component {
   render() {
     return (
       <div className='headerContent'>
-        <SubHeaderContent />
-        <Navbar />
+        <Logo />
+        <AdBanner />
       </div>
-    )
+    ) 
   }
 }
 

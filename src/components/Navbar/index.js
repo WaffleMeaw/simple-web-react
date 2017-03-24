@@ -1,11 +1,27 @@
 import React, { Component } from 'react'
-import NavbarItem from '../NavbarItem'
+import NavbarList from '../NavbarList';
+
+const menuArray = [
+  {
+    title: 'Item 1',
+    href: '#',
+  }, {
+    title: 'Item 2',
+    href: '#',
+  }, {
+    title: 'Item 3',
+    href: '#',
+  }, {
+    title: 'Item 4',
+    href: '#',
+  },
+]
 
 class Navbar extends Component {
   render() {
     return (
       <div className='navbar'>
-        <NavbarItem />
+        <NavbarList menuArray={menuArray} />
       </div>
     )
   }

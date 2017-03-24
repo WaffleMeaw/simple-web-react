@@ -1,21 +1,11 @@
 import React, { Component } from 'react'
+import BodyContent from '../BodyContent'
 
 class Body extends Component {
   render() {
     return (
       <div className='body'>
-        <div className='bodyContent'>
-          <div className='mainContent'>
-            <div className='cardList'>
-              <div className='card'>
-                Card...
-              </div>
-            </div>
-          </div>
-          <div className='sideContent'>
-            SideContent
-          </div>
-        </div>
+        <BodyContent />
       </div>
     )
   }
