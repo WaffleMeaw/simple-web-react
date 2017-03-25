@@ -3,14 +3,20 @@ import Card from '../Card';
 
 class CardList extends Component {
   render() {
-    const { posts } = this.props
+    const { posts, users } = this.props
 
     return (
       <div className='cardList'>
         {
-          posts.map((value,index) => (
-            <Card key={value.id} title={value.title} content={value.body}/>
-          ))
+          posts.map((post, indexPost) => {
+            return (
+              users.map((user, indexUser) => {
+                if (post.userId === user.id) {
+                  return <Card key={post.id} post={post} user={user} />
+                }
+              })
+            )
+          })
         }
       </div>
     );

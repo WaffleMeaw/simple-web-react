@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import CardHeader from '../CardHeader';
 import CardBody from '../CardBody';
-// import CardFooter from '../CardFooter';
+import CardFooter from '../CardFooter';
 
 class Card extends Component {
   render() {
-    const { title, content } = this.props
+    const { post, user} = this.props
 
     return (
       <div className='card'>
-        <CardHeader title={title} />
-        <CardBody content={content} />
-        {/*<CardFooter />*/}
+        <CardHeader title={post.title} />
+        <div className='cardSubHeader'>
+          <span className='submitted'>
+            By: {user.username}
+          </span>
+        </div>
+        <CardBody content={post.body} />
+        <CardFooter />
       </div>
     );
   }

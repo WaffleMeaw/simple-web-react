@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ImageContent from '../ImageContent';
-import Content from '../Content';
+// import ImageContent from '../ImageContent';
+// import Content from '../Content';
 
 class CardBody extends Component {
   render() {
@@ -8,8 +8,14 @@ class CardBody extends Component {
 
     return (
       <div className='cardBody'>
-        {/*<ImageContent />*/}
-        <Content content={content} />
+        <span className='imageContent'>
+          Image
+        </span>
+        <span className='content'>
+          <div>
+            {content}
+          </div>
+        </span>
       </div>
     );
   }
