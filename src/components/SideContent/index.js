@@ -4,7 +4,9 @@ class SideContent extends Component {
   render() {
     return (
       <div className='sideContent'>
-          SideContent
+          <div className='sideAdBanner'>
+            AdBenner
+          </div>
       </div>
     );
   }
