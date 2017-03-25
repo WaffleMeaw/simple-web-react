@@ -59,7 +59,7 @@
   background-color: #26770a;
 }
 
-.navbarItem > a {
+.navbarLink {
   color: white;
   text-decoration: none;
 }
@@ -85,6 +85,7 @@
 .cardList {
   width: 620px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 
@@ -166,8 +167,16 @@
 
 
 .sideContent {
+  margin-top: 20px;
   width: 260px;
   height: 600px;
   float: right;
-  background-color: #FFF3D3;
+}
+
+.sideAdBanner {
+  width: 260px;
+  height: 240px;
+  background-color: dodgerblue;
+  line-height: 240px;
+  text-align: center;
 }

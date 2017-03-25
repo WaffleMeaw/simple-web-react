@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class NavbarItem extends Component {
   render() {
@@ -6,7 +7,7 @@ class NavbarItem extends Component {
 
     return (
       <li className='navbarItem'>
-        <a href={href}>{title}</a>
+        <Link to={href} className='navbarLink'>{title}</Link>
       </li>
     )
   }

@@ -3,8 +3,8 @@ import NavbarList from '../NavbarList';
 
 const menuArray = [
   {
-    title: 'Item 1',
-    href: '#',
+    title: 'Home',
+    href: '/',
   }, {
     title: 'Item 2',
     href: '#',
@@ -12,8 +12,8 @@ const menuArray = [
     title: 'Item 3',
     href: '#',
   }, {
-    title: 'Item 4',
-    href: '#',
+    title: 'Users',
+    href: '/Users',
   },
 ]
 
