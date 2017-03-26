@@ -1,9 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM, { render } from 'react-dom';
+import { createStore } from 'redux'
+import Reducer from './reducers'
 import App from './App';
 import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+const store = createStore(Reducer)
+
+const view = () => (
+  render((
+    <App store={store} />
+  ), document.getElementById('root')
+))
+
+store.subscribe(view)
+view()

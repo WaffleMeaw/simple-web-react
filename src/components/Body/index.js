@@ -3,6 +3,7 @@ import BodyContent from '../BodyContent'
 
 class Body extends Component {
   render() {
+
     return (
       <div className='body'>
         <BodyContent />

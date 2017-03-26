@@ -8,13 +8,15 @@ import './App.css'
 
 class App extends Component {
   render() {
+    console.log(this.props.store.getState())
+
     return (
       <Router>
         <div className='appRoot'>
           <Header />
           <Navbar />
           <Route exact path="/" component={Body} />
-          <Route path="/users" component={Users}/>
+          <Route path="/users" component={Users} />
         </div>
       </Router>
     )
